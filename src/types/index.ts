@@ -3,6 +3,7 @@ export type Category =
   | "mobile-apps"
   | "ui-ux-design"
   | "branding"
+  | "digital-marketing"
   | "photography";
 
 export interface PortfolioItem {

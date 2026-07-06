@@ -3,15 +3,15 @@ import type { PortfolioItem } from "@/types";
 export const portfolioItems: PortfolioItem[] = [
   {
     id: "1",
-    title: "E-Commerce Platform",
-    slug: "e-commerce-platform",
+    title: "Expert Digital Marketing Strategy",
+    slug: "expert-digital-marketing",
     description:
-      "A full-stack e-commerce platform with cart, checkout, and admin panel built with Next.js and Stripe.",
-    excerpt: "Modern e-commerce with seamless checkout experience.",
-    category: "web-development",
-    tags: ["Next.js", "Stripe", "PostgreSQL"],
+      "Comprehensive digital marketing expertise including SEO optimization, content strategy, social media campaigns, and data-driven analytics to maximize brand visibility and engagement in the modern era.",
+    excerpt: "Strategic digital marketing for modern brands.",
+    category: "digital-marketing",
+    tags: ["SEO", "Social Media", "Analytics", "Content Strategy"],
     imageUrl:
-      "https://images.unsplash.com/photo-1557821552-5200715883e7?w=800&h=600&fit=crop",
+      "https://images.pexels.com/photos/7974/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
     liveUrl: "https://example.com",
     githubUrl: "https://github.com",
     featured: true,

@@ -22,6 +22,11 @@ export const categories: { value: Category; label: string; description: string }
     description: "Logos, identity systems, and brand guidelines",
   },
   {
+    value: "digital-marketing",
+    label: "Digital Marketing",
+    description: "SEO, content strategy, social media, and campaigns",
+  },
+  {
     value: "photography",
     label: "Photography",
     description: "Visual storytelling and photo series",
