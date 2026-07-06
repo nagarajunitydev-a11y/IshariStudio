@@ -10,26 +10,37 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 export function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setLoading(true);
+    setError(null);
 
     const formData = new FormData(e.currentTarget);
+    const payload = {
+      name: formData.get("name"),
+      email: formData.get("email"),
+      subject: formData.get("subject"),
+      message: formData.get("message"),
+    };
+
     try {
-      await fetch("/api/contact", {
+      const response = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          name: formData.get("name"),
-          email: formData.get("email"),
-          subject: formData.get("subject"),
-          message: formData.get("message"),
-        }),
+        body: JSON.stringify(payload),
       });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.error || "Failed to send message");
+      }
+
       setSubmitted(true);
-    } catch {
-      setSubmitted(true);
+      (e.currentTarget as HTMLFormElement).reset();
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "An error occurred while sending your message");
     } finally {
       setLoading(false);
     }
@@ -46,6 +57,13 @@ export function ContactForm() {
               Thank you for reaching out. I&apos;ll get back to you soon.
             </p>
           </div>
+          <Button
+            variant="outline"
+            onClick={() => setSubmitted(false)}
+            className="mt-4"
+          >
+            Send another message
+          </Button>
         </CardContent>
       </Card>
     );
@@ -60,6 +78,11 @@ export function ContactForm() {
         </CardDescription>
       </CardHeader>
       <CardContent>
+        {error && (
+          <div className="mb-4 rounded-lg border border-red-500/50 bg-red-50 p-3 text-sm text-red-700 dark:bg-red-950 dark:text-red-200">
+            {error}
+          </div>
+        )}
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="grid gap-4 sm:grid-cols-2">
             <div>
