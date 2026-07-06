@@ -1,0 +1,97 @@
+import type { PortfolioItem } from "@/types";
+
+export const portfolioItems: PortfolioItem[] = [
+  {
+    id: "1",
+    title: "E-Commerce Platform",
+    slug: "e-commerce-platform",
+    description:
+      "A full-stack e-commerce platform with cart, checkout, and admin panel built with Next.js and Stripe.",
+    excerpt: "Modern e-commerce with seamless checkout experience.",
+    category: "web-development",
+    tags: ["Next.js", "Stripe", "PostgreSQL"],
+    imageUrl:
+      "https://images.unsplash.com/photo-1557821552-5200715883e7?w=800&h=600&fit=crop",
+    liveUrl: "https://example.com",
+    githubUrl: "https://github.com",
+    featured: true,
+    createdAt: "2025-11-15",
+    updatedAt: "2025-11-15",
+  },
+  {
+    id: "2",
+    title: "Fitness Tracker App",
+    slug: "fitness-tracker-app",
+    description:
+      "Cross-platform mobile app for tracking workouts, nutrition, and progress with beautiful data visualizations.",
+    excerpt: "Track workouts and nutrition on the go.",
+    category: "mobile-apps",
+    tags: ["React Native", "Firebase", "Charts"],
+    imageUrl:
+      "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&h=600&fit=crop",
+    featured: true,
+    createdAt: "2025-10-20",
+    updatedAt: "2025-10-20",
+  },
+  {
+    id: "3",
+    title: "Brand Identity — Nova Studio",
+    slug: "brand-identity-nova-studio",
+    description:
+      "Complete brand identity system including logo, color palette, typography, and marketing collateral.",
+    excerpt: "Bold visual identity for a creative agency.",
+    category: "branding",
+    tags: ["Logo", "Brand Guidelines", "Print"],
+    imageUrl:
+      "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&h=600&fit=crop",
+    featured: false,
+    createdAt: "2025-09-08",
+    updatedAt: "2025-09-08",
+  },
+  {
+    id: "4",
+    title: "Dashboard UI Kit",
+    slug: "dashboard-ui-kit",
+    description:
+      "A comprehensive UI kit with 50+ components designed for SaaS dashboards and admin panels.",
+    excerpt: "Production-ready dashboard components.",
+    category: "ui-ux-design",
+    tags: ["Figma", "Design System", "Components"],
+    imageUrl:
+      "https://images.unsplash.com/photo-1558655146-d09347e92766?w=800&h=600&fit=crop",
+    featured: true,
+    createdAt: "2025-08-12",
+    updatedAt: "2025-08-12",
+  },
+  {
+    id: "5",
+    title: "Urban Landscapes",
+    slug: "urban-landscapes",
+    description:
+      "A photography series capturing the interplay of light and architecture in metropolitan cities.",
+    excerpt: "Cityscapes at golden hour.",
+    category: "photography",
+    tags: ["Street", "Architecture", "Golden Hour"],
+    imageUrl:
+      "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800&h=600&fit=crop",
+    featured: false,
+    createdAt: "2025-07-22",
+    updatedAt: "2025-07-22",
+  },
+  {
+    id: "6",
+    title: "Task Management SaaS",
+    slug: "task-management-saas",
+    description:
+      "Collaborative task management tool with real-time updates, kanban boards, and team analytics.",
+    excerpt: "Real-time collaboration for remote teams.",
+    category: "web-development",
+    tags: ["React", "Node.js", "WebSockets"],
+    imageUrl:
+      "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&h=600&fit=crop",
+    liveUrl: "https://example.com",
+    featured: false,
+    createdAt: "2025-06-01",
+    updatedAt: "2025-06-01",
+  },
+];
