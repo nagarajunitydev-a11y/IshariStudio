@@ -27,6 +27,11 @@ export const categories: { value: Category; label: string; description: string }
     description: "SEO, content strategy, social media, and campaigns",
   },
   {
+    value: "bike-car-configurator",
+    label: "Bike / Car Configurator",
+    description: "Browser configurator experiences for mobile and desktop platforms (Windows, Mac)",
+  },
+  {
     value: "photography",
     label: "Photography",
     description: "Visual storytelling and photo series",

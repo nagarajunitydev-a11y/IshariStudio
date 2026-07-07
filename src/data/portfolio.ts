@@ -13,10 +13,27 @@ export const portfolioItems: PortfolioItem[] = [
     imageUrl:
       "https://images.pexels.com/photos/7974/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
     liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
+    githubUrl: "https://github.com/nagarajunitydev-a11y/Expert-Digital-Marketing-Strategy.git",
     featured: true,
     createdAt: "2025-11-15",
     updatedAt: "2025-11-15",
+  },
+  {
+    id: "7",
+    title: "Bike & Car Configurator",
+    slug: "bike-car-configurator",
+    description:
+      "Interactive browser-based configurator for bikes and cars, optimized for mobile and desktop platforms including Windows and Mac.",
+    excerpt: "Responsive vehicle configurator for browser platforms.",
+    category: "bike-car-configurator",
+    tags: ["React", "Three.js", "Responsive", "Windows", "Mac"],
+    imageUrl:
+      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&h=600&fit=crop",
+    liveUrl: "https://example.com",
+    githubUrl: "https://github.com/nagarajunitydev-a11y/bike-car-configurator",
+    featured: false,
+    createdAt: "2026-01-10",
+    updatedAt: "2026-01-10",
   },
   {
     id: "2",
